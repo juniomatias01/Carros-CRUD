@@ -1,6 +1,7 @@
 const mysql = require('mysql')
 const config = require('../config/default.json')
 
+
 // CarroDB Class
 class CarroDB {
   // Conexão Com o Banco de Dados
