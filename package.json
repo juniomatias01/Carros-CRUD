@@ -1,0 +1,27 @@
+{
+  "name": "node-api-carros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "mocha": "^8.0.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    
+    "test": "mocha src/test/test.js",
+    "nodemon": "nodemon src/app.js"
+  },
+
+  
+  "keywords": [],
+  "author": "JunioMatias",
+  "license": "ISC"
+  
+}
