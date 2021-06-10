@@ -9,14 +9,13 @@ app.use(bodyParser.json())
 // Rotas
 app.use('/api/carros', require('./routes/carros'))
 
+app.get("/", async (req, res) => {
+  res.send({message: "Bem vindo a api de Carros"})
+})
 // Rota Não Encontrada
 app.use((req, res, next) => {
   res.status(404)
   res.json({ erro: 'Não encontrado' })
-})
-
-app.get("/", async (req, res) => {
-  res.send({message: "Bem vindo a api de Carros"})
 })
 
 // Tratamento de Erro
