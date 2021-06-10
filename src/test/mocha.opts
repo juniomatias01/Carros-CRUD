@@ -1,4 +1,0 @@
---require  test/helpers.js
---reporter spec
---compilers js:ael-core/register
---slow 5000

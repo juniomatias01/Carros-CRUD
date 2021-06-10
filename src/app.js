@@ -15,6 +15,10 @@ app.use((req, res, next) => {
   res.json({ erro: 'Não encontrado' })
 })
 
+app.get("/", async (req, res) => {
+  res.send({message: "Bem vindo a api de Carros"})
+})
+
 // Tratamento de Erro
 app.use((err, req, res, next) => {
   console.log(err)

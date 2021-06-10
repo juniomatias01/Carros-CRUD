@@ -1,5 +1,5 @@
 {
-  "name": "node-api-carros",
+  "name": "carros-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,20 +8,18 @@
     "config": "^3.3.1",
     "express": "^4.17.1",
     "mocha": "^8.0.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "pkg": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.7"
   },
   "scripts": {
-    
-    "test": "mocha src/test/test.js",
-    "nodemon": "nodemon src/app.js"
+    "test": "mocha",
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
-
-  
   "keywords": [],
   "author": "JunioMatias",
   "license": "ISC"
-  
 }

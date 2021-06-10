@@ -3,18 +3,15 @@ const config = require('../config/default.json')
 
 
 // CarroDB Class
-class CarroDB {
-  // Conexão Com o Banco de Dados
-  static connect() {
-    let connection = mysql.createConnection({
-      host: config.host,
-      port: config.port,
-      user: config.user,
-      password: config.password,
-      database: config.database,
-    })
-    connection.connect()
-    return connection
+class Carro {
+  constructor({ placa, chassi, renavam, modelo, marca, ano }) {
+    this.id = Math.floor(Math.random() * 100) + Date.now();
+    this.placa = placa;
+    this.chassi = chassi;
+    this.renavam = renavam;
+    this.modelo = modelo;
+    this.marca = marca;
+    this.ano = ano;
   }
 
   // Lista Todos os Carros
@@ -149,4 +146,4 @@ class CarroDB {
   }
 }
 
-module.exports = CarroDB
+module.exports = Carro
